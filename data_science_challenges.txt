@@ -1,0 +1,27 @@
+Company X is building a fiber network (Program) with vendors. They are using an engineering system to track the fiber build progress 
+and an invoicing system for vendor invoicing. Vendor submits invoicing to get paid and the external labor CapEX is booked 
+when its goods receipt (GR_DATE).The invoicing on external labor is based on the fiber build milestones using contractual bid units 
+and milestone percentage..
+
+Below data sets 
+Program’s fiber build progress build progress_ext.xlsx
+Milestone associated contractual bid unit and milestone percentage milestone bid unit.csv
+Invoicing data invoice_ext.xlsx
+
+
+Senior management wants to have visibility of Program spend. The 2020 budget for external labor CapEX is $2 billion. 
+You are tasked to present to senior management about your findings and recommendations.
+
+What is the total external labor cost as of the program to date and year to date, nationally and at market level 
+How much external labor CapEX do you forecast for 2020, nationally and at market level `	
+In addition, what patterns (if any) do you find for invoicing lag ( invoice date - milestone complete date)
+
+(Hints Further information might be obtained upon request, or assumptions may be made for your analysis.)
+
+Notes
+Please submit your analysis results along with codes and powerpoint in separate files.
+
+Fiber build progress is tracked at span level using fqn_id.
+For simplicity, only need to track external labor related to following milestones
+MILESTONE_NM in ('1-Engineering','2-Construction','4-Project Management') and 
+FIBER_MILESTONE in ('Permits Received','Cable Placed','Spliced and Tested');
